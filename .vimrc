@@ -103,3 +103,14 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
+
+
+" 隠しファイルをデフォルトで表示させる
+let NERDTreeShowHidden = 1
+ 
+" デフォルトでツリーを表示させる
+autocmd VimEnter * execute 'NERDTree'
+
+" キー割り当て ctrl+n でNERDTree
+map <C-e> :NERDTree<CR>
+
