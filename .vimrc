@@ -89,6 +89,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 't9md/vim-choosewin'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -112,5 +113,8 @@ let NERDTreeShowHidden = 1
 autocmd VimEnter * execute 'NERDTree'
 
 " キー割り当て ctrl+n でNERDTree
-map <C-e> :NERDTree<CR>
+"map <C-e> :NERDTree<CR>
+nnoremap <F1> :NERDTreeToggle<CR>
 
+nmap  -  <Plug>(choosewin)
+let g:choosewin_overlay_enable = 1
